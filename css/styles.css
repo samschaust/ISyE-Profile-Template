@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  transition: all ease-in-out 500ms
+}
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  Text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.container {
+  width: 90%
+  margin: 0 auto;
+  max-width: 70em;
+}
+
+.clearfix::after,
+  section::after,
+  footer::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* Column system
+=================== */
+
+[class^=col-] {
+  float: left;
+  padding: .5em .5em;
+  width: 100%;
+}
+
+[class^=col-]:first-child {
+  padding-left: .5em;
+}
+
+[class^=col-]:last-child {
+  padding-right: 0;
+}
+
+@media (min-width: 40rem) {
+  .col-2 {
+    width: 50%;
+  }
+
+  .col-1 {
+    width: 25%;
+  }
+}
+
+/* typography
+================ */
+
+h1 {
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1.5em;
+}
+
+
+.title span {
+  font-weight: 300;
+  display: block;
+  font-size: .9em;
+}
+
+.title-cta {
+  margin: 0 0 .5em;
+}
+
+.unstyled-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.ul-contact {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2em;
+}
+
+@media (min-width:60rem) {
+  .title{
+    font-size: 3.5rem;
+  }
+}
+
+
+/* buttons
+============== */
+
+.button {
+  display: inline-block;
+  font-size: 1.25rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-width: 2px;
+  border-style: solid;
+  padding: .5em 1.5em;
+}
+
+@media (min-width:60rem) {
+  .button {
+    font-size: 1.5rem
+  }
+}
+
+.button-small {
+  font-size: .7rem;
+  font-weight: 700;
+}
+
+.button-accent {
+  color: #ffcc33;
+  border-color: #ffcc33;
+
+}
+
+.button-accent:hover,
+.button-accent:focus {
+  background: #7a0019;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+.button-light {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  margin-top: 1.5em;
+}
+
+.button-light:hover,
+.button-light:focus {
+  background: #ffcc33;
+  color: #000000;
+  border-color: #000000;
+}
+
+
+/* header
+================ */
+
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 1em;
+}
+
+
+nav ul {
+  margin: 0
+  padding: 0
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 1em;
+}
+
+
+nav a {
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8rem;
+  padding: .25em;
+  color: #FFF;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #DDD;
+}
+
+@media (min-width:60rem) {
+  .logo {
+    float: left;
+  }
+
+  nav {
+    float: right;
+  }
+}
+
+
+/* home-hero
+=================== */
+
+.home-hero {
+  background-image: url(../img/home-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10em 0;
+  color: #7a0019;
+}
+
+@media (min-width:60rem) {
+  .home-hero {
+    height: 100vh;
+    padding-top: 35vh;
+  }
+}
+
+
+/* home-about-textbox
+=================== */
+
+.home-about-textbox {
+  background-color: #232323;
+  padding-top: 5em;
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-bottom: 4em;
+  width: 100vw;
+  outline: 2px solid #FFFFFF;
+  outline-offset: -2em;
+  color: #FFFFFF;
+  position: relative;
+
+}
+
+.home-about-textbox h1 {
+  color: #ffcc33;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: .2em;
+  background: #232323;
+  padding: 2px;
+
+}
+
+
+/* portfolio
+=============== */
+
+.portfolio {
+  margin: 3em 0;
+}
+
+.port-item {
+  margin: 0;
+  position: relative;
+}
+
+.port-item img {
+  display: block;
+}
+
+.port-desc {
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  left: 0em;
+  right: 0em;
+  color: white;
+  background: rgba(0,0,0,.75);
+  padding-bottom: 1em;
+  padding-top: .5em;
+}
+
+.port-desc p{
+  margin: 1em;
+}
+
+@media (min-width: 37rem) {
+  .port-item {
+    width: 50%;
+    float: left;
+    overflow: hidden;
+  }
+
+  .port-desc {
+    transform: translateY(150%);
+  }
+
+  .port-item:hover .port-desc {
+    transform: translateY(0%);
+    }
+  }
+
+
+/* CTA
+=================== */
+
+.cta {
+    background-color: #ffcc33;
+    padding: 6em 0;
+  }
+
+
+/* footer
+=================== */
+
+footer {
+  background: #232323;
+  color: #FFFFFF;
+  text-align: left;
+  padding: 4em 0;
+}
