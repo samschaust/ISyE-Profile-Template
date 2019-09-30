@@ -20,17 +20,17 @@ img {
 }
 
 a:link {
-  color: #FFFFFF;
+  color: #7a0019;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ffcc33;
+  color: #7a0019;
   text-decoration: underline;
 }
 
 a:active {
-  color: #ffcc33;
+  color: #7a0019;
   text-decoration: underline;
 }
 
@@ -79,8 +79,15 @@ a:active {
 ================ */
 
 h1 {
-  font-weight: 300;
+  font-weight: 700;
   font-size: 2.5rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1em;
+  margin-top: .5em;
 }
 
 .title {
@@ -115,6 +122,20 @@ h1 {
   .title{
     font-size: 3.5rem;
   }
+}
+
+
+/* FWH slides
+============== */
+
+.fwh-slide-grey {
+  background-color: #d5d6d2;
+  padding: 2em;
+}
+
+.fwh-slide-tan {
+  background-color: #f0e3cb;
+  padding: 2em;
 }
 
 
@@ -204,7 +225,6 @@ nav a {
 nav a:hover,
 nav a:focus {
   color: #7a0019;
-  text-decoration: underline;
 }
 
 @media (min-width:60rem) {
@@ -223,10 +243,7 @@ nav a:focus {
 =================== */
 
 .home-hero {
-  background-image: url(../img/home-hero.jpg);
-  background-size: cover;
-  background-position: center;
-  padding: 10em 0;
+  padding: 20em 0;
   color: #7a0019;
 }
 
@@ -238,16 +255,17 @@ nav a:focus {
 }
 
 .item-1 {
+  height: 20vh;
   padding: 10em 0;
   color: #7a0019;
 }
 
-@media (min-width:60rem) {
-  .item-1 {
-    height: 100vh;
-    padding-top: 35vh;
+@media (min-width: 37rem) {
+  .port-item {
+    width: 50%;
+    float: left;
+    overflow: hidden;
   }
-}
 
 /* home-about-textbox
 =================== */
@@ -278,53 +296,21 @@ nav a:focus {
 }
 
 
-/* portfolio
-=============== */
+/* contact
+=================== */
 
-.portfolio {
-  margin: 3em 0;
+.col-col1 {
+  width: 50%;
 }
 
-.port-item {
-  margin: 0;
-  position: relative;
+.col-col2 {
+  width: 50%;
+  padding-left: 4em;
 }
 
-.port-item img {
-  display: block;
+@media only screen and (max-width:60rem) {
+  width:
 }
-
-.port-desc {
-  position: absolute;
-  z-index: 100;
-  bottom: 0;
-  left: 0em;
-  right: 0em;
-  color: white;
-  background: rgba(0,0,0,.75);
-  padding-bottom: 1em;
-  padding-top: .5em;
-}
-
-.port-desc p{
-  margin: 1em;
-}
-
-@media (min-width: 37rem) {
-  .port-item {
-    width: 50%;
-    float: left;
-    overflow: hidden;
-  }
-
-  .port-desc {
-    transform: translateY(150%);
-  }
-
-  .port-item:hover .port-desc {
-    transform: translateY(0%);
-    }
-  }
 
 
 /* CTA
