@@ -48,6 +48,8 @@ a:active {
   clear: both;
 }
 
+
+
 /* Column system
 =================== */
 
@@ -79,7 +81,7 @@ a:active {
 ================ */
 
 h1 {
-  font-weight: 300;
+  font-weight: 900;
   font-size: 2.5rem;
 }
 
@@ -90,13 +92,20 @@ h1 {
 
 
 .title span {
-  font-weight: 300;
+  font-weight: 700;
   display: block;
   font-size: .9em;
 }
 
 .title-cta {
   margin: 0 0 .5em;
+}
+
+div.a {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: .15px;
 }
 
 .unstyled-list {
@@ -126,14 +135,14 @@ h1 {
   font-size: 1.25rem;
   text-decoration: none;
   text-transform: uppercase;
-  border-width: 2px;
+  border-width: 3px;
   border-style: solid;
   padding: .5em 1.5em;
 }
 
 @media (min-width:60rem) {
   .button {
-    font-size: 1.5rem
+    font-size: 1.5rem;
   }
 }
 
@@ -145,6 +154,7 @@ h1 {
 .button-accent {
   color: #ffcc33;
   border-color: #ffcc33;
+  font-weight: 700;
 
 }
 
@@ -159,13 +169,15 @@ h1 {
   color: #FFFFFF;
   border-color: #FFFFFF;
   margin-top: 1.5em;
+  font-weight: 900;
 }
 
 .button-light:hover,
 .button-light:focus {
-  background: #ffcc33;
+  background: #FFFFFF;
   color: #000000;
   border-color: #000000;
+  font-weight: 900;
 }
 
 
@@ -283,6 +295,7 @@ nav a:focus {
 
 .portfolio {
   margin: 3em 0;
+  width: 100vw;
 }
 
 .port-item {
@@ -333,15 +346,17 @@ nav a:focus {
 .cta {
     background-color: #ffcc33;
     padding: 6em 0;
+    width: 100vw;
   }
 
 
-/* footer
-=================== */
+  /* footer
+  =================== */
 
-footer {
-  background: #232323;
-  color: #FFFFFF;
-  text-align: left;
-  padding: 4em 0;
-}
+  footer {
+    background: #232323;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 4em 0;
+    width: 100vw;
+  }
