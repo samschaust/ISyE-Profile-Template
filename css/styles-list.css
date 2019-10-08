@@ -326,6 +326,7 @@ nav a:focus {
 .cta {
     background-color: #ffcc33;
     padding: 6em 0;
+    width: 100vw;
   }
 
 
@@ -337,4 +338,5 @@ footer {
   color: #FFFFFF;
   text-align: left;
   padding: 4em 0;
+  width: 100vw;
 }
