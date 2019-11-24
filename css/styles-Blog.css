@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  transition: all ease-in-out 500ms
+}
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  Text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a:link {
+  color: #7a0019;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #7a0019;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #7a0019;
+  text-decoration: underline;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 70em;
+}
+
+.clearfix::after,
+  section::after,
+  footer::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* Column system
+=================== */
+
+[class^=col-] {
+  float: left;
+  padding: .5em .5em;
+  width: 100%;
+}
+
+[class^=col-]:first-child {
+  padding-left: .5em;
+}
+
+[class^=col-]:last-child {
+  padding-right: 0;
+}
+
+@media (min-width: 40rem) {
+  .col-2 {
+    width: 50%;
+  }
+
+  .col-1 {
+    width: 25%;
+  }
+}
+
+/* typography
+================ */
+
+h1 {
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1em;
+  margin-top: .5em;
+}
+
+div.a {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: .15px;
+  text-align: left;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1.5em;
+}
+
+
+.title span {
+  font-weight: 300;
+  display: block;
+  font-size: .9em;
+}
+
+.title-cta {
+  margin: 0 0 .5em;
+}
+
+.unstyled-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.ul-contact {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2em;
+}
+
+@media (min-width:60rem) {
+  .title{
+    font-size: 3.5rem;
+  }
+}
+
+
+/* FWH slides
+============== */
+
+.fwh-slide-grey {
+  background-color: #d5d6d2;
+  padding: 2em;
+}
+
+.fwh-slide-tan {
+  background-color: #f0e3cb;
+  padding: 2em;
+}
+
+
+/* buttons
+============== */
+
+.button {
+  display: inline-block;
+  font-size: 1.25rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-width: 2px;
+  border-style: solid;
+  padding: .5em 1.5em;
+}
+
+@media (min-width:60rem) {
+  .button {
+    font-size: 1.5rem
+  }
+}
+
+.button-small {
+  font-size: .7rem;
+  font-weight: 700;
+}
+
+.button-accent {
+  color: #ffcc33;
+  border-color: #ffcc33;
+
+}
+
+.button-accent:hover,
+.button-accent:focus {
+  background: #7a0019;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+.button-light {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  margin-top: 1.5em;
+}
+
+.button-light:hover,
+.button-light:focus {
+  background: #ffcc33;
+  color: #000000;
+  border-color: #000000;
+}
+
+
+/* header
+================ */
+
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 1em;
+}
+
+
+nav ul {
+  margin: 0
+  padding: 0
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 1em;
+}
+
+
+nav a {
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8rem;
+  padding: .25em;
+  color: #000000;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #7a0019;
+}
+
+@media (min-width:60rem) {
+  .logo {
+    float: left;
+  }
+
+
+  nav {
+    float: right;
+  }
+}
+
+
+/* home-hero
+=================== */
+
+.home-hero {
+  padding: 20em 0;
+  color: #7a0019;
+}
+
+@media (min-width:60rem) {
+  .home-hero {
+    height: 100vh;
+    padding-top: 35vh;
+  }
+}
+
+.item-1 {
+  height: 20vh;
+  padding: 15em 0;
+  color: #7a0019;
+}
+
+@media (min-width: 37rem) {
+  .port-item {
+    width: 50%;
+    float: left;
+    overflow: hidden;
+  }
+
+/* home-about-textbox
+=================== */
+
+.home-about-textbox {
+  background-color: #232323;
+  padding-top: 5em;
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-bottom: 4em;
+  width: 100vw;
+  outline: 2px solid #FFFFFF;
+  outline-offset: -2em;
+  color: #FFFFFF;
+  position: relative;
+
+}
+
+.home-about-textbox h1 {
+  color: #ffcc33;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: .2em;
+  background: #232323;
+  padding: 2px;
+
+}
+
+
+/* contact
+=================== */
+
+.col-col1 {
+  width: 50%;
+}
+
+.col-col2 {
+  width: 50%;
+  padding-left: 4em;
+}
+
+@media only screen and (max-width:60rem) {
+  width:
+}
+
+
+/* CTA
+=================== */
+
+.cta {
+    background-color: #ffcc33;
+    padding: 6em 0;
+    width: 100vw;
+  }
+
+
+/* footer
+=================== */
+
+footer {
+  background: #232323;
+  color: #FFFFFF;
+  text-align: left;
+  padding: 4em 0;
+  width: 100vw;
+}
+
+
+
+/* Dropdown Button
+=================== */
+.dropbtn {
+  background-color: #FFCC33;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-top: -4em;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  text-align: left;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 400px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #ffb71e;}
